@@ -39,6 +39,6 @@ app.use(
 //   console.log(req.body.username);
 // });
 
-app.listen(3000, () => {
-  console.log("server is up");
+app.listen(process.env.PORT, () => {
+  console.log("server is up on" + process.env.PORT);
 });

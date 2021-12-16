@@ -10,7 +10,4 @@ In this app user can register/login in and create/update/delete the notes
 - EJS 
 #### Deployed on Heroku
 
-
-<center>
-<img src="https://raw.githubusercontent.com/uday-kiran77/Sticky-notes/main/app%20screenshot.png"/>
-</center>
+<img src="https://raw.githubusercontent.com/uday-kiran77/Sticky-notes/main/app%20screenshot.png" style="margin:auto"/>

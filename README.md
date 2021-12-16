@@ -1,4 +1,4 @@
-## [Stciky Notes](https://stickynotes-node-app.herokuapp.com)
+## [Sticky Notes](https://stickynotes-node-app.herokuapp.com)
 
 ### About
 In this app user can register/login in and create/update/delete the notes

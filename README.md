@@ -1,12 +1,13 @@
-## Task Manager API
+## [Stciky Notes](https://stickynotes-node-app.herokuapp.com)
 
 ### About
-In this  REST API user can make requests like create, update and delete the user and also create, update and delete the tasks of the user.
+In this app user can register/login in and create/update/delete the notes
 
 ### Technologies Used
 - NodeJS
 - Express
 - MongoDB
-- JWT (JSON Web Tokens)
+- EJS 
+#### Deployed on Heroku
 
 ![App Screenshot](https://raw.githubusercontent.com/uday-kiran77/Sticky-notes/main/app%20screenshot.png)

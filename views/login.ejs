@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Sticky Notes</title>
+    <link rel="stylesheet" href="/styles/login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <form id="login" action="/login" method="POST">
+      <div id="title">
+        <h3>Login here</h3>
+        <div id="errorContainer">
+          <% if (error) { %>
+          <div class="error alert">
+            <p><%= error %></p>
+            <span><i class="fa-regular fa-circle-xmark"></i></span>
+          </div>
+          <% } %>
+        </div>
+      </div>
+      <label for="username" class="label01">Username</label>
+      <input
+        type="text"
+        placeholder="Username"
+        id="username"
+        value="<%= username %>"
+        name="username"
+      />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        placeholder="Password"
+        name="password"
+        id="password"
+      />
+
+      <button class="loginBtn" type="submit">Log In</button>
+      <button class="registerBtn"><a href="/register">Register</a></button>
+    </form>
+
+    <script defer>
+      $("#errorContainer").on("click", () => {
+        $("#errorContainer").fadeOut();
+      });
+    </script>
+  </body>
+</html>
